@@ -1,0 +1,57 @@
+.footer{
+  display:grid;
+  grid-template-columns: 20% auto 20%;
+  align-items: center;
+  height: 20vh;
+  background-color: #F5F6F8;
+}
+
+.footer .list-items{
+  display: grid;
+  grid-template-columns: 20% 20% auto;
+  list-style: none;
+}
+
+.footer .list-items li {
+  height: 6vh;
+}
+
+.footer .list-items li a{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 16px;
+  color:hsl(210, 10%, 33%);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footer .list-items li a:hover{
+  color:hsl(171, 66%, 44%);
+}
+
+.footer .logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 8vh;
+  height: 8vh;
+}
+
+.footer .social-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-container .fab{
+  font-size: 4vh;
+  margin: 1vh;
+  color:hsl(210, 10%, 33%);
+  transition: all 0.5s ease;
+}
+
+.footer .social-container .fab:hover{
+  color: hsl(171, 66%, 44%);
+}
