@@ -28,13 +28,13 @@ export default function Footer() {
       </ul>
       <div className='social-container'>
         <a href="#facebook">
-          <i class="fab fa-facebook-square"/>
+          <i className="fab fa-facebook-square"/>
         </a>
         <a href="#twitter">
-          <i class="fab fa-twitter"/>
+          <i className="fab fa-twitter"/>
         </a>
         <a href="#instagram">
-          <i class="fab fa-instagram"/>
+          <i className="fab fa-instagram"/>
         </a>
       </div>
     </div>
