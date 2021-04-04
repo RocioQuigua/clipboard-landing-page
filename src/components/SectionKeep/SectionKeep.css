@@ -1,0 +1,103 @@
+.section-keep {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 20vh;
+}
+
+.section-keep .container-tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-keep .container-tittle h1 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 4vh;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin: 0px;
+}
+
+.section-keep .container-tittle p {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 2.4vh;
+  font-weight: 400;
+  opacity: 0.6;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  width: 45%;
+}
+
+.section-keep .content {
+  display: flex;
+  align-items: center;
+}
+
+.section-keep .content .img-keep {
+  width: 60%;
+  height: 500px;
+  object-fit: contain;
+  transform: translate(-80px, 0%);
+}
+
+.section-keep .container-item .card-item h2 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 3vh;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin: 0px;
+}
+
+.section-keep .container-item .card-item p {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 2.4vh;
+  font-weight: 400;
+  opacity: 0.6;
+  color: hsl(210, 10%, 33%);
+  text-align: left;
+  width: 58%;
+}
+
+.section-keep .container-item .card-item {
+  height: 20vh;
+}
+
+.section-keep .container-item {
+  height: 60vh;
+}
+
+@media (max-width: 450px) {
+  .section-keep {
+    height: auto;
+    padding: 2vh;
+  }
+  .section-keep .content {
+    flex-direction: column;
+  }
+  .section-keep .container-tittle h1 {
+    text-align: center;
+  }
+  .section-keep .container-tittle p{
+    width: 90%;
+  }
+  .section-keep .content .img-keep{
+    width: 90%;
+    height: auto;
+    margin-top: 6vh;
+    transform: none;
+  }
+  .section-keep .container-item .card-item h2{
+    text-align: center;
+  }
+  .section-keep .container-item .card-item p{
+    text-align: center;
+    width: 90%;
+  }
+  .section-keep .container-item{
+    padding-top: 10vh;
+  }
+}
