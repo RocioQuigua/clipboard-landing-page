@@ -1,0 +1,114 @@
+.section-supercharge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 5vh;
+}
+
+.section-supercharge .container-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-supercharge .container-tittle h1 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 4vh;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin: 0px;
+}
+
+.section-supercharge .container-tittle p {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2.2vh;
+    font-weight: 400;
+    opacity: 0.6;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    width: 100%;
+}
+
+.section-supercharge .container-item {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.section-supercharge .container-item .card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-supercharge .container-item .card-item img{
+    width: 6%;
+    height: 8vh;
+    object-fit: contain;
+    margin-bottom: 2vh;
+}
+
+.section-supercharge .container-item .card-item h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2.4vh;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin: 0px;
+}
+
+.section-supercharge .container-item .card-item p {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    opacity: 0.6;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    width: 50%;
+}
+
+.section-supercharge .container-img img{
+    width: 10%;
+    height: 8vh;
+    object-fit: contain;
+    margin-top: 20vh;
+    margin-left: 12vh;
+    padding: 1vh;
+}
+
+@media (max-width:450px){
+    .section-supercharge{
+        height: auto;
+        padding: 6vh;
+    }
+    .section-supercharge .container-tittle{
+        flex-direction: column;
+    }
+    .section-supercharge .container-tittle h1{
+        text-align: center;
+    }
+    .section-supercharge .container-tittle p{
+        width: 90%;
+    }
+    .section-supercharge .container-img img{
+        height: 6vh;
+        width: 80%;
+        margin-top: 10vh;
+    }
+    .section-supercharge .container-item .card-item img{
+        height: 2vh;
+        width: 80%;
+        background-size: contain;
+    }
+    .section-supercharge .container-item .card-item h2{
+        text-align: center;
+    }
+    .section-supercharge .container-item .card-item p{
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+}
