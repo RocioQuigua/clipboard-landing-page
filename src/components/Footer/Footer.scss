@@ -1,0 +1,78 @@
+.footer {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  align-items: center;
+  height: 20vh;
+  background-color: $color-white;
+  &__list-items {
+    display: grid;
+    grid-template-columns: 20% 20% auto;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+      height: 6vh;
+      a {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-size: 2.4vh;
+        color: $color-second;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover{
+          color: $color-primary;
+        }
+      }
+    }
+    
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 8vh;
+    height: 8vh;
+  }
+  .social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 4vh;
+      margin-right: 4vh;
+      color: $color-second;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  @media (max-width: $medium){
+    grid-template-columns: 100%;
+    height: auto;
+    .list-items{
+      grid-template-columns: 100%;
+      text-align: center;
+      li {
+        height: 7vh;
+        &:last-child {
+          height: 4vh;
+        }
+      }
+    }
+    .logo-container{
+      height: 18vh;
+    }
+    .social-container{
+      height: 16vh;
+      a{
+        margin: 0px;
+        margin-right: 6vh;
+        &:last-child{
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

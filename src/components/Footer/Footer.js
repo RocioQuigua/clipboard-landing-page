@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './Footer.css';
 import logo from '../../assets/img/logo.svg'
 
 export default function Footer() {
@@ -9,7 +8,7 @@ export default function Footer() {
       <div className='logo-container'>
         <img className='logo' src={logo} alt='logo' />
       </div>
-      <ul className='list-items'>
+      <ul className='footer__list-items'>
         <li>
           <a href="#faqs">FAQs</a>
         </li>
