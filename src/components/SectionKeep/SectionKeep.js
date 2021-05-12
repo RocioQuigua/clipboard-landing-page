@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './SectionKeep.css';
 import imgKeep from '../../assets/img/image-computer.png';
 
 export default function SectionKeep() {

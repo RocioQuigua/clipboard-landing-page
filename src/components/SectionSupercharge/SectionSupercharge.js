@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './SectionSupercharge.css';
 import imgCreate from '../../assets/img/icon-blacklist.svg'
 import imgPlain from '../../assets/img/icon-text.svg'
 import imgSneak from '../../assets/img/icon-preview.svg'

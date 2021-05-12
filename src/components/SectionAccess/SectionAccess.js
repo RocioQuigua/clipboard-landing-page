@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './SectionAccess.css';
 import imgAccess from '../../assets/img/image-devices.png'
 
 export default function SectionAccess() {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './SectionPresentation.css';
 import logo from '../../assets/img/logo.svg';
 
 export default function SectionPresentation() {
@@ -15,8 +14,8 @@ export default function SectionPresentation() {
           copy. Instanly access your clipboard all your devices.</p>
       </div>
       <div className='container-button'>
-        <button className='button-primary'>Download for iOS</button>
-        <button className='button-second'>Download for Mac</button>
+        <button className='button button--primary'>Download for iOS</button>
+        <button className='button button--second'>Download for Mac</button>
       </div>
     </div>
   )
