@@ -1,0 +1,94 @@
+.section-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+  background-image: url("../../assets/img/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  .container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16vh;
+    margin-bottom: 8vh;
+    .logo {
+      width: 18vh;
+      height: 18vh;
+    }
+  }
+  .container-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    h1 {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 5.5vh;
+      font-weight: 700;
+      color: $color-second;
+      margin: 0px;
+    }
+    p {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 2.4vh;
+      font-weight: 400;
+      opacity: 0.6;
+      color: $color-second;
+      text-align: center;
+      width: 70%;
+    }
+  }
+  .container-button button {
+    border: none;
+    width: 30vh;
+    height: 8vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 2.4vh;
+    font-weight: 600;
+    color: $color-white;
+    border-radius: 5vh;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .container-button {
+    .button--primary {
+      background-color: $color-primary;
+      margin-right: 3vh;
+      border-bottom: 4px solid $color-fifth;
+    }
+    .button--second {
+      background-color: $color-third;
+      border-bottom: 4px solid $color-fourth;
+    }
+  }
+  @media (max-width: $medium){
+    text-align: center;
+    height: 110vh;
+    background-image: url('../../assets/img/bg-header-mobile.png');
+    padding: 3vh;
+    .container-tittle {
+      h1{
+        font-size: 4.8vh;
+      }
+      p{
+        width: 90%;
+      }
+    }
+    .container-button button{
+      width:100%;
+    }
+    .container-button {
+      .button--primary {
+        margin-bottom: 3vh;
+        margin-right: 0px;
+      }
+    }
+  }
+}

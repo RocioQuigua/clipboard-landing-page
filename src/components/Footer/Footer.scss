@@ -51,7 +51,7 @@
   @media (max-width: $medium){
     grid-template-columns: 100%;
     height: auto;
-    .list-items{
+    &__list-items{
       grid-template-columns: 100%;
       text-align: center;
       li {

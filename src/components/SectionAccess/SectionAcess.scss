@@ -1,0 +1,52 @@
+.section-access {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-top: 2vh;
+  .container-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 4vh;
+      font-weight: 600;
+      color: $color-second;
+      margin: 0px;
+    }
+    p {
+      font-family: "Bai Jamjuree", sans-serif;
+      font-size: 2.4vh;
+      font-weight: 400;
+      opacity: 0.6;
+      color: $color-second;
+      text-align: center;
+      width: 75%;
+    }
+  }
+  .img-access {
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+  }
+  @media (max-width: $medium) {
+    padding: 4vh;
+    height: 60vh;
+    .container-tittle {
+      margin-bottom: 4vh;
+      h1 {
+        text-align: center;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .img-access {
+      height: 90%;
+      width: 90%;
+    }
+  }
+}
