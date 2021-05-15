@@ -3,6 +3,20 @@ import React from 'react'
 import imgKeep from '../../assets/img/image-computer.png';
 
 export default function SectionKeep() {
+  let cards = [
+    {
+      title: 'Quick Search',
+      description: 'Easily search your snippets by content, category, web address, application, and more.',
+    },
+    {
+      title: 'iCloud Sync',
+      description: 'Instanly saves and syncs strippets across all your devices.',
+    },
+    {
+      title: 'Complete History',
+      description: 'Retrieve any snippets from the first moment you started using the app.',
+    }
+  ];
   return (
     <div className='section-keep'>
       <div className='container-tittle'>
@@ -14,21 +28,14 @@ export default function SectionKeep() {
       <div className='content'>
         <img className='img-keep' src={imgKeep} alt="imgKeep" />
         <div className='container-item'>
-          <div className='card-item'>
-            <h2>Quick Search</h2>
-            <p>Easily search your snippets by content,
-          category, web address, application, and more.</p>
-          </div>
-          <div className='card-item'>
-            <h2>iCloud Sync</h2>
-            <p>Instanly saves and syncs strippets across all
-            your devices.</p>
-          </div>
-          <div className='card-item'>
-            <h2>Complete History</h2>
-            <p>Retrieve any snippets from the first moment
-            you started using the app.</p>
-          </div>
+          {
+            cards.map((card, index) =>
+              <div className='card-item' key={index}>
+                <h2>{card.title}</h2>
+                <p>{card.description}</p>
+              </div>
+            )
+          }
         </div>
       </div>
     </div>

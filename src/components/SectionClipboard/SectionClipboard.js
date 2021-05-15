@@ -11,7 +11,7 @@ export default function SectionClipboard() {
         sync with ¡Cloud and you're ready to start adding to your clipboard.</p>
       </div>
       <div className='container-button'>
-      <Button type='primary' name='Download for iOS'/>
+      <Button type='primary' name='Download for iOS' />
       <Button type='secondary' name='Download for Mac'/>
       </div>
     </div>
