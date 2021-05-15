@@ -1,0 +1,25 @@
+.buttonComponent {
+  border: none;
+  width: 100%;
+  height: 8vh;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 2.4vh;
+  font-weight: 600;
+  color: $color-white;
+  border-radius: 5vh;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.8s ease;
+  &:hover {
+  opacity: 0.8;
+  }
+  &--primary {
+    background-color: $color-primary;
+    margin-right: 3vh;
+    border-bottom: 4px solid $color-fifth;
+  }
+  &--secondary {
+    background-color: $color-third;
+    border-bottom: 4px solid $color-fourth;
+  }
+}

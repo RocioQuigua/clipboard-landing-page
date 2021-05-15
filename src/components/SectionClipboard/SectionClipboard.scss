@@ -4,6 +4,12 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+  .container-button {
+    width: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2vh;
+  }
   .container-tittle {
     display: flex;
     flex-direction: column;
@@ -27,34 +33,6 @@
       width: 64%;
     }
   }
-  .container-button button {
-    border: none;
-    width: 30vh;
-    height: 8vh;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-size: 2.4vh;
-    font-weight: 600;
-    color: $color-white;
-    background-color: $color-primary;
-    border-radius: 5vh;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.8s ease;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-  .container-button {
-    .button--primary {
-      background-color: $color-primary;
-      margin-right: 3vh;
-      border-bottom: 4px solid $color-fifth;
-    }
-    .button--second {
-      background-color: $color-third;
-      border-bottom: 4px solid $color-fourth;
-    }
-  }
   @media (max-width: $medium) {
     text-align: center;
     padding: 4vh;
@@ -69,17 +47,10 @@
         width: 95%;
       }
     }
-    .container-button button {
-      width: 100%;
-      &:hover {
-        opacity: 0.9;
-      }
-    }
     .container-button {
-      .button--primary {
-        margin-right: 0px;
-        margin-bottom: 6vh;
-      }
+      grid-template-columns: 100%;
+      row-gap: 2vh;
+      width: 100%;
     }
   }
 }

@@ -10,6 +10,23 @@ import imgHp from '../../assets/img/logo-hp.png';
 import imgVector from '../../assets/img/logo-vector-graphics.png';
 
 export default function SectionSupercharge() {
+  let cards = [
+    {
+      img: imgCreate,
+      title: 'Create blacklists',
+      description: 'Ensure sensitive inforrmation never makes its way to your clipboard by exluding certain sources.',
+    },
+    {
+      img: imgPlain,
+      title: 'Plain text snippets',
+      description: 'Remove unwanted formatting from copied text for a consistent look.',
+    },
+    {
+      img: imgSneak,
+      title: 'Sneak preview',
+      description: 'Quick preview of all snippets on your Clipboard for easy access.',
+    }
+  ]
   return (
     <div className='section-supercharge'>
       <div className='container-tittle'>
@@ -17,24 +34,15 @@ export default function SectionSupercharge() {
         <p>We've got the tools to boost your productivity.</p>
       </div>
       <div className='container-item'>
-        <div className='card-item'>
-          <img className='img' src={imgCreate} alt="imgCreate" />
-          <h2>Create blacklists</h2>
-          <p>Ensure sensitive inforrmation never makes its way 
-            to your clipboard by exluding certain sources.</p>
-        </div>
-        <div className='card-item'>
-          <img className='img' src={imgPlain} alt="imgPlain" />
-          <h2>Plain text snippets</h2>
-          <p>Remove unwanted formatting from copied text for
-          a consistent look.</p>
-        </div>
-        <div className='card-item'>
-          <img className='img' src={imgSneak} alt="imgSneak" />
-          <h2>Sneak preview</h2>
-          <p>Quick preview of all snippets on your Clipboard
-          for easy access.</p>
-        </div>
+        {
+          cards.map((card, index) =>
+            <div className='card-item' key={index}>
+              <img className='img' src={card.img} alt={card.title} />
+              <h2>{card.title}</h2>
+              <p>{card.description}</p>
+            </div>
+          )
+        }
       </div>
       <div className='container-img'>
         <img className='img' src={imgGoogle} alt="imgGoogle" />

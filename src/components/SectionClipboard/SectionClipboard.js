@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from '../Button/Button';
+
 export default function SectionClipboard() {
   return (
     <div className='section-clipboard'>
@@ -9,8 +11,8 @@ export default function SectionClipboard() {
         sync with ¡Cloud and you're ready to start adding to your clipboard.</p>
       </div>
       <div className='container-button'>
-      <button className='button button--primary'>Download for iOS</button>
-      <button className='button button--second'>Download for Mac</button>
+      <Button type='primary' name='Download for iOS'/>
+      <Button type='secondary' name='Download for Mac'/>
       </div>
     </div>
   )
